@@ -1,12 +1,13 @@
 {
-  "name": "io.cordova.hellocordova",
-  "displayName": "HelloCordova",
+  "name": "dev.mkorman.cordovaexample",
+  "displayName": "Cordova-Example",
   "version": "1.0.0",
   "devDependencies": {
     "copy-webpack-plugin": "^6.4.1",
     "cordova-android": "^12.0.1",
     "cordova-ios": "^7.0.1",
     "cordova-plugin-webpack": "^1.0.5",
+    "cordova-support-android-plugin": "~2.0.4",
     "webpack": "^4.47.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.3"
@@ -17,10 +18,15 @@
       "ios"
     ],
     "plugins": {
-      "cordova-plugin-webpack": {}
+      "cordova-plugin-webpack": {},
+      "cordova-plugin-firebase-authentication": {
+        "ANDROID_FIREBASE_BOM_VERSION": "30.3.1",
+        "IOS_FIREBASE_POD_VERSION": "9.3.0"
+      }
     }
   },
   "dependencies": {
+    "cordova-plugin-firebase-authentication": "7.0.1",
     "phaser": "^3.60.0"
   }
 }

@@ -26,6 +26,19 @@ let game;
 document.addEventListener(
   'deviceready',
   () => {
+    // cordova.plugins.firebase.auth.onAuthStateChanged(user => {
+    //   if (user) {
+    //     console.log('Authorized: ' + user.uid);
+    //   }
+    // });
+    // cordova.plugins.firebase.auth.signInAnonymously()
+    //   .then(() => {
+    //     console.log('Signed in');
+    //   })
+    //   .catch(err => {
+    //     console.error('Error while signing in', err);
+    //   });
+    
     game = new Phaser.Game(config);
   },
   false

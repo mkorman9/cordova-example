@@ -16,6 +16,8 @@ mkdir www
 cordova platform add android
 ```
 
+- Create app in Firebase console and copy `google-services.json`` to `firebase` directory
+
 - Build
 
 ```sh
