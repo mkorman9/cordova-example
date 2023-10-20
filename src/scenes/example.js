@@ -23,5 +23,9 @@ export class Example extends Phaser.Scene {
     logo.setCollideWorldBounds(true);
 
     particles.startFollow(logo);
+
+    this.input.on('pointerdown', pointer => {
+      logo.setPosition(pointer.worldX, pointer.worldY);
+    });
   }
 }
