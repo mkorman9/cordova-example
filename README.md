@@ -19,7 +19,7 @@ cordova platform add android
 - Build
 
 ```sh
-cordova build
+cordova build android
 ```
 
 - Open project in Android Studio and run in emulator
